@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-# 9-print_last_digit.py
+# 8-uppercae.py
 
-def print_last_digit(number):
-"""Print the last digit of a number and return it."""
-print(abs(number) % 10, end="")
-return (abs(number) % 10)
+def uppercase(str):
+    for i in str:
+        if ord(i) >= 97 and ord(i) <= 122:
+            c = chr(ord(i) - 32)
+        else:
+            c = i
+            print("{}".format(c), end="")
+            print()

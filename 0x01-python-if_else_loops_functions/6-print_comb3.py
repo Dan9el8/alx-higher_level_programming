@@ -4,9 +4,9 @@
 """Print different combination in decsending order
 two digits considered identical."""
 
-for digit1 in range(0, 10):
-for digit2 in range(digit1 + 1, 10):
-if digit1 == 8 and digit2( == 9):
+for digit1 in range(10):
+for digit2 in range(digit1+1, 10):
 print("{}{}".format(digit1, digit2))
-else:
-print("{}{}".format(digit1, digit2), end=",")
+if digit1 != 8 or digit2 != 9:
+print(", ", end="")
+print()
